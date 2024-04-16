@@ -1,48 +1,65 @@
 library(shiny)
-library(openai) # Assuming you have installed and set up the open ai API library
+library(openai) # Assuming you have installed and set up the openai API library
 library(stringdist)
-text <-  data.frame(
-  question_id = c(1, 2, 3, 4),
-  question = c(
-    "What is the capital city of France?",
-    "How many planets are in our solar system?",
-    "What is the largest mammal on Earth?",
-    "Who painted the famous artwork 'The Starry Night'?"
-  ),
-  stringsAsFactors = FALSE
-)
+library(proxyC)
+library(tidyverse)
+
 # Load your data
-polling_data <- read.csv("data/polling_data.csv")
+polling_data <- read.csv("data/first_questions.csv")
 
 # Function to retrieve text embeddings using OpenAI API
-get_embeddings <- function(text) {
+get_embeddings <- function(text_vec) {
   # Replace 'openai_api_key' with your actual OpenAI API key
-  openai::create_embedding(model='text-embedding-3-small', input = text$question, openai_api_key = openai_key)
+  embedding <- openai::create_embedding(model='text-embedding-3-small', input = text_vec, openai_api_key = openai_key) 
+  res <- do.call(rbind, embedding$data$embedding) %>% 
+    as.matrix()
+  rownames(res) <- text_vec
+  return(res)
 }
 
-function(input, output, text) {
-  
+# Function to generate summary using OpenAI LLM
+generate_summary <- function(text) {
+  # Replace 'openai_api_key' with your actual OpenAI API key
+  response <- openai::create_completion(
+    model = "text-davinci-002",
+    prompt = paste("Please summarize the following text:\n\n", text),
+    max_tokens = 100,
+    n = 1,
+    stop = NULL,
+    temperature = 0.7,
+    openai_api_key = openai_key
+  )
+
+server <- function(input, output, session) {
   # Reactive function to filter and find top questions
-  top_questions <- eventReactive(input$submit, {
+  top_questions <- eventReactive(input$search_and_summarise, {
     # Get user-provided topic and its embedding
     user_topic <- input$topic
     topic_embedding <- get_embeddings(user_topic)
+    rownames(topic_embedding) <- 'sim'
+    text_embedding <- get_embeddings(polling_data$question)
     
     # Calculate similarity between topic embedding and each question
-    text$similarities <- sapply(text$topic_embedding, function(x) stringdist(x,topic_embedding,method="cosine"))
-    res <- text %>% arrange(desc(similarities)) %>% head(n)
-    return(res)
-    # Filter polling_data based on similarity scores
-    top_indices <- order(similarities, decreasing = TRUE)[1:5] # Get top 5
-    top_questions_data <- polling_data[top_indices, ]
+    sim_raw <- proxyC::simil(
+      text_embedding,
+      topic_embedding,
+      method = 'cosine'
+    )
+    res <- as.matrix(sim_raw) %>% 
+      as_tibble() %>% 
+      mutate(questions = rownames(text_embedding)) 
+    res <- res %>% 
+      arrange(desc(sim))
     
-    # You can add more logic here to calculate average response, 
-    # regional differences, etc., and include them in the returned data frame
-    
-    return(top_questions_data)
+    top_questions_data <- res$questions[1:5]
+    return(top_questions_data) # Get top 5
   })
   
   output$top_questions <- renderTable({
     top_questions()
   })
 }
+
+
+
+
