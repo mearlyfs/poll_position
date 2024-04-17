@@ -1,0 +1,738 @@
+question,key
+"If there were a General Election tomorrow, how likely would you be to vote on a scale from 0 to 10, where 0 means you are certain NOT to vote and 10 means you are absolutely CERTAIN to vote?",1
+"If there were a General Election tomorrow to elect MPs to Westminster, which of the following parties do you think you would vote for or would you vote for another party?",2
+Which of the following other parties would you vote for?,3
+"If it were a legal requirement for you to vote, which of the following parties do you think you would vote for or would you vote for another party?",4
+"At the General Election that took on the 12th December 2019, 67% of people voted and 33% of people did not. Did you, or did you not vote in the 2019 General Election?",5
+"Thinking back to the General Election that took on the 12th December 2019, which of the following parties did you vote for, or did you vote for another party?",6
+Which other party did you vote for?,7
+"At the EU Referendum in 2016, 72% of people voted and 28% of people did not. Did you, or did you not vote in the 2016 EU Referendum?",8
+Thinking back to the EU Referendum in 2016 how did you vote?,9
+"If there were a UK General Election tomorrow, how likely would you be to vote on a scale from 0 to 10, where 0 means you are certain NOT to vote and 10 means you are absolutely CERTAIN to vote?",10
+"If there were a UK General Election tomorrow to elect MPs to Westminster, which of the following parties do you think you would vote for or would you vote for another party?",11
+"If there were a UK General Election tomorrow to elect MPs to Westminster, which of the following parties do you think you would vote for or would you vote for another party?/If it were a legal requirement for you to vote, which of the following parties do you think you would vote for or would you vote for another party?",12
+"At the UK General Election that took on the 12th December 2019, 67% of people voted and 33% of people did not. Did you, or did you not vote in the 2019 UK General Election?",13
+"Thinking back to the UK General Election that took on the 12th December 2019, which of the following parties did you vote for, or did you vote for another party?",14
+"Thinking of how you said earlier that you'd vote if a General Election were tomorrow, how likely, or unlikely, is it that you'll change your mind between now and when the next election is actually held?",15
+Which of the following politicians do you think would make the best Prime Minister?,16
+"Irrespective of how you think you might vote at the next General Election, which of the following do you think is the most likely outcome?",17
+You said earlier that you voted for the Conservative Party at the 2019 General Election but would vote Labour if there were an election tomorrow. Which of the following best describes the reason for your vote?,18
+You said earlier that you voted for the Conservative Party at the 2019 General Election but would vote Reform UK if there were an election tomorrow. Which of the following best describes the reason for your vote?,19
+You said earlier that you voted for the Conservative Party at the 2019 General Election but would vote for a different party or are undecided if there were an election tomorrow. Which of these is closest to your view?,20
+Sum: Conservative Party: Which of the following political parties do you think has the best plan for each of the following?,21
+Sum: Labour Party: Which of the following political parties do you think has the best plan for each of the following?,22
+Manage the economy: Which of the following political parties do you think has the best plan for each of the following?,23
+Cut taxes for working people: Which of the following political parties do you think has the best plan for each of the following?,24
+Stop small boat crossings: Which of the following political parties do you think has the best plan for each of the following?,25
+Represent the UK on the global stage: Which of the following political parties do you think has the best plan for each of the following?,26
+Improve the NHS: Which of the following political parties do you think has the best plan for each of the following?,27
+Manage the transition to Net Zero: Which of the following political parties do you think has the best plan for each of the following?,28
+"Thinking about Rishi Sunak, which of these statements best applies to him?",29
+"Thinking about Keir Starmer, which of these statements best applies to him?",30
+"Thinking about the Conservative Party, which of these statements best apply?",31
+"Thinking about the Labour Party, which of these statements best apply?",32
+"Sum: Read: How often on average, do you read each of the following newspapers?",33
+"Sum: Read at least once a week: How often on average, do you read each of the following newspapers?",34
+"Sum: Read at least once a month: How often on average, do you read each of the following newspapers?",35
+"The Sun/ Sun on Sunday: How often on average, do you read each of the following newspapers?",36
+"The Daily Telegraph/ The Sunday Telegraph: How often on average, do you read each of the following newspapers?",37
+"The Times/ The Sunday Times: How often on average, do you read each of the following newspapers?",38
+"The Daily Star/ Daily Star Sunday: How often on average, do you read each of the following newspapers?",39
+"The Guardian: How often on average, do you read each of the following newspapers?",40
+"The Observer: How often on average, do you read each of the following newspapers?",41
+"The Independent/ The Independent on Sunday: How often on average, do you read each of the following newspapers?",42
+"The Mirror/ Sunday Mirror: How often on average, do you read each of the following newspapers?",43
+"Financial Times/ FT Weekend: How often on average, do you read each of the following newspapers?",44
+"Daily Mail/ Mail on Sunday: How often on average, do you read each of the following newspapers?",45
+"Sum: Read: How often on average, do you visit each of the following news sites?",46
+"Sum: Read at least once a week: How often on average, do you visit each of the following news sites?",47
+"Sum: Read at least once a month: How often on average, do you visit each of the following news sites?",48
+"TheSun.co.uk: How often on average, do you visit each of the following news sites?",49
+"Telegraph.co.uk: How often on average, do you visit each of the following news sites?",50
+"Thetimes.co.uk: How often on average, do you visit each of the following news sites?",51
+"Dailystar.co.uk: How often on average, do you visit each of the following news sites?",52
+"Theguardian.com: How often on average, do you visit each of the following news sites?",53
+"Independent.co.uk: How often on average, do you visit each of the following news sites?",54
+"inews.co.uk: How often on average, do you visit each of the following news sites?",55
+"mirror.co.uk: How often on average, do you visit each of the following news sites?",56
+"ft.com: How often on average, do you visit each of the following news sites?",57
+"Dailymail.co.uk: How often on average, do you visit each of the following news sites?",58
+"BBC News: How often on average, do you visit each of the following news sites?",59
+"Channel 4 News: How often on average, do you visit each of the following news sites?",60
+"Sky News: How often on average, do you visit each of the following news sites?",61
+"CNN: How often on average, do you visit each of the following news sites?",62
+"Huffington Post: How often on average, do you visit each of the following news sites?",63
+"Buzzfeed.com: How often on average, do you visit each of the following news sites?",64
+Sum: Advocates: How would you describe your overall opinion of the brands below compared to other news/media brands?,65
+"Sum: Rejectors: How often on average, do you visit each of the following news sites?",66
+The Sun: How would you describe your overall opinion of the brands below compared to other news/media brands?,67
+The Daily Mail: How would you describe your overall opinion of the brands below compared to other news/media brands?,68
+Mail Online: How would you describe your overall opinion of the brands below compared to other news/media brands?,69
+Daily Express: How would you describe your overall opinion of the brands below compared to other news/media brands?,70
+The Mirror: How would you describe your overall opinion of the brands below compared to other news/media brands?,71
+Daily Star: How would you describe your overall opinion of the brands below compared to other news/media brands?,72
+You mentioned that you read The Sun and/or TheSun.co.uk. Which of these topics do you read or look at in The Sun/on TheSun.co.uk?,73
+You mentioned that you read about politics in The Sun or on TheSun.co.uk. How often does the political content you read reflect your own personal views?,74
+How do you identify?,75
+How old are you?,76
+Where do you live?,77
+Please indicate which one of the following best describes the profession of the chief income earner in your household.,78
+Is the house or flat in which you live...?,79
+Which of the following best describes your work status before March 2020 (pre-Covid 19)?,80
+How many cars are there in your household?,81
+Have you taken a foreign holiday in the last 3 years?,82
+The government in general: To what extent do you feel favourably or unfavourably towards each of the following?,83
+Boris Johnson: To what extent do you feel favourably or unfavourably towards each of the following?,84
+Keir Starmer: To what extent do you feel favourably or unfavourably towards each of the following?,85
+Rishi Sunak: To what extent do you feel favourably or unfavourably towards each of the following?,86
+Ed Davey: To what extent do you feel favourably or unfavourably towards each of the following?,87
+Liz Truss: To what extent do you feel favourably or unfavourably towards each of the following?,88
+James Cleverly: To what extent do you feel favourably or unfavourably towards each of the following?,89
+Suella Braverman: To what extent do you feel favourably or unfavourably towards each of the following?,90
+Ben Wallace: To what extent do you feel favourably or unfavourably towards each of the following?,91
+Jeremy Hunt: To what extent do you feel favourably or unfavourably towards each of the following?,92
+David Cameron: To what extent do you feel favourably or unfavourably towards each of the following?,93
+Nigel Farage: To what extent do you feel favourably or unfavourably towards each of the following?,94
+Donald Trump: To what extent do you feel favourably or unfavourably towards each of the following?,95
+Joe Biden: To what extent do you feel favourably or unfavourably towards each of the following?,96
+"Keir Starmer: Thinking about each of the following characteristics some people may say about politicians, do you think they apply to each of these?",97
+"Ed Davey: Thinking about each of the following characteristics some people may say about politicians, do you think they apply to each of these?",98
+"Rishi Sunak: Thinking about each of the following characteristics some people may say about politicians, do you think they apply to each of these?",99
+"Thinking about Rishi Sunak and his policies, which of the following statements is closest to your view?",100
+"Thinking about Keir Starmer and his policies, which of the following statements is closest to your view?",101
+"Thinking about Rishi Sunak and the Conservative Party, which of the following statements is closest to your view?",102
+"Thinking about Keir Starmer and the Labour Party, which of the following statements is closest to your view?",103
+"Conservative Party: Thinking about each of the following characteristics some people may say about political parties, do you think they apply to each of these parties?",104
+"Labour Party: Thinking about each of the following characteristics some people may say about political parties, do you think they apply to each of these parties?",105
+"Liberal Democrats: Thinking about each of the following characteristics some people may say about political parties, do you think they apply to each of these parties?",106
+"The economy: To what extent do you think that each of the following will get better or worse over the course of the next 12 months, or will they stay the same?",107
+"The National Health Service (NHS): To what extent do you think that each of the following will get better or worse over the course of the next 12 months, or will they stay the same?",108
+"The education system: To what extent do you think that each of the following will get better or worse over the course of the next 12 months, or will they stay the same?",109
+"Your personal finances: To what extent do you think that each of the following will get better or worse over the course of the next 12 months, or will they stay the same?",110
+"Your physical health: To what extent do you think that each of the following will get better or worse over the course of the next 12 months, or will they stay the same?",111
+"Your mental health: To what extent do you think that each of the following will get better or worse over the course of the next 12 months, or will they stay the same?",112
+Attended a protest or rally: Which of the following have you ever done?,113
+Become a member of a political party: Which of the following have you ever done?,114
+Become a member of a trade union: Which of the following have you ever done?,115
+Signed an online or physical petition: Which of the following have you ever done?,116
+Joined a local or national campaign group: Which of the following have you ever done?,117
+"Homophobia: To what extent do you think that each of these are, or are not, a problem in the UK?",118
+"Biphobia: To what extent do you think that each of these are, or are not, a problem in the UK?",119
+"Transphobia: To what extent do you think that each of these are, or are not, a problem in the UK?",120
+"Racism: To what extent do you think that each of these are, or are not, a problem in the UK?",121
+"Sexism: To what extent do you think that each of these are, or are not, a problem in the UK?",122
+"Ableism: To what extent do you think that each of these are, or are not, a problem in the UK?",123
+"Ageism: To what extent do you think that each of these are, or are not, a problem in the UK?",124
+"Antisemitism: To what extent do you think that each of these are, or are not, a problem in the UK?",125
+"Islamophobia: To what extent do you think that each of these are, or are not, a problem in the UK?",126
+"Class discrimination: To what extent do you think that each of these are, or are not, a problem in the UK?",127
+Repay £5 you've lent them: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,128
+Lend you £5 when you need it: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,129
+Look after your home while you are away: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,130
+Cook a good meal: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,131
+Buy a round for their friends at the pub: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,132
+Tip their server: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,133
+Give impartial advice: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,134
+Assemble flat-pack furniture: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,135
+Cut the food you are sharing equally in half: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,136
+Organise a fun night out: Please select whether you trust Rishi Sunak or Keir Starmer more to do each of the following actions.,137
+Healthcare: To what extent are you optimistic or pessimistic about the following issues in YYYY?,138
+Your financial situation: To what extent are you optimistic or pessimistic about the following issues in YYYY?,139
+Employment: To what extent are you optimistic or pessimistic about the following issues in YYYY?,140
+The economy: To what extent are you optimistic or pessimistic about the following issues in YYYY?,141
+Going on holiday abroad: To what extent are you optimistic or pessimistic about the following issues in YYYY?,142
+Your local area: To what extent are you optimistic or pessimistic about the following issues in YYYY?,143
+SUMMARY - (Sum: Acceptable): To what extent would you say that it is acceptable or unacceptable for political parties to be funded in each of the following ways?,144
+SUMMARY - (Sum: Unacceptable): To what extent would you say that it is acceptable or unacceptable for political parties to be funded in each of the following ways?,145
+Private donations from wealthy individuals: To what extent would you say that it is acceptable or unacceptable for political parties to be funded in each of the following ways?,146
+Membership fees: To what extent would you say that it is acceptable or unacceptable for political parties to be funded in each of the following ways?,147
+State funding: To what extent would you say that it is acceptable or unacceptable for political parties to be funded in each of the following ways?,148
+Fundraising events e.g. party conferences: To what extent would you say that it is acceptable or unacceptable for political parties to be funded in each of the following ways?,149
+"SUMMARY - (Sum: Influence): Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",150
+"SUMMARY - (Sum: No Influence): Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",151
+"Conservative: Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",152
+"Labour: Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",153
+"Liberal Democrats: Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",154
+"SNP: Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",155
+"Green Party: Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",156
+"Reform UK: Thinking about the policies of the following political parties, to what extent would you say that private donations from wealthy individuals end up having influence on party policy?",157
+"There has been a story in the news this week about Frank Hester, a large donor to the Conservative Party. To what extent have you heard about this story?",158
+"at the following pairs, which of the following best matches your view?.",159
+SUMMARY - (Acceptable): Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,160
+SUMMARY - (Unacceptable): Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,161
+UK-based newspapers: Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,162
+UK-based sports teams: Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,163
+UK-based construction firms: Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,164
+UK-based private healthcare providers: Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,165
+UK-based television channels: Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,166
+UK-based technology companies: Do you think it is acceptable or unacceptable for foreign governments to invest in each of the following?,167
+SUMMARY - (Sum: Concerned): To what extent would you be concerned or unconcerned about each of the following owning a newspaper that operates exclusively in the UK?,168
+A wealthy individual who owns newspapers in other countries: To what extent would you be concerned or unconcerned about each of the following owning a newspaper that operates exclusively in the UK?,169
+A British individual who already owns a British newspaper: To what extent would you be concerned or unconcerned about each of the following owning a newspaper that operates exclusively in the UK?,170
+A fund with significant investment from a Middle Eastern government: To what extent would you be concerned or unconcerned about each of the following owning a newspaper that operates exclusively in the UK?,171
+In which of the following ways do you identify?,172
+What is the nearest city to where you live?,173
+Which of the following best describes the profession of the chief income earner in your household?,174
+Which of the following best describes the previous occupation of the chief income earner in your household before retirement?,175
+Which of the following best describes the profession of the chief income earner in your household? Including previous occupation,176
+SEG - set from Occupation question,177
+How would you describe your ethnic origin?,178
+"Have you ever been a victim of fraud? (Please note, this could be any type of fraud - such as text scams, romance fraud, cold calling, identity theft, investment fraud, etc.)",179
+Did you lose any money when you were a victim of fraud?,180
+What type of fraud were you a victim of?,181
+"You said that you lost money as a result of being a victim of fraud. Which of the following statements, if any, apply to your experience of being a victim of fraud?",182
+"Reflecting on your experience(s) of being defrauded, how did you feel immediately after the incident (i.e., at the time you lost your money, or discovered the person you had been speaking with was not who they said they were)?",183
+"Your sleep: What impact, if any, did your experience of being defrauded have on the following:",184
+"Your personal relationships: What impact, if any, did your experience of being defrauded have on the following:",185
+"Your ability to work: What impact, if any, did your experience of being defrauded have on the following:",186
+"Your mood: What impact, if any, did your experience of being defrauded have on the following:",187
+"What impact, if any, did your experience of being defrauded have on the following: SUMMARY",188
+"Roughly, how long do you estimate that your sleep was impacted for, after you lost money from fraud? If you can't remember, please give your best guess.",189
+"Which of the following reasons, if any, do you think explain why being defrauded impacted your sleep?",190
+"Since losing money, have you experienced any changes in your physical health that you feel could be a result of being a victim of fraud? Examples may include increased blood pressure or weight gain as a result of prolonged stress caused by the incident.",191
+What changes have you experienced in your physical health since being a victim of fraud?,192
+"I have struggled with alcohol misuse since being a victim of fraud: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",193
+"I have struggled with drug/illegal substances misuse since being a victim of fraud: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",194
+"I have struggled with self-care since being a victim of fraud: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",195
+"I trust people less since being a victim of fraud: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",196
+"I trust my gut instinct more since being a victim of fraud: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",197
+"I am warier of strangers since being a victim of fraud: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",198
+"I feel more confident in my ability to spot fraud since being a victim: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",199
+"Being a victim of fraud has made me more mindful of how I spend my money: Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements?",200
+"Reflecting on your experience(s) of having money stolen from you by fraudsters, to what extent do you agree or disagree with each the following statements? SUMMARY",201
+To what extent do you agree or disagree with the following statement: 'Being a victim of fraud has had a negative impact on my mental health'?,202
+"In what way(s) has being a victim of fraud impacted your mental health? If fraudsters have stolen money from you on more than one occasion, please consider how, collectively, being defrauded has had a negative impact on your mental health.",203
+Have you ever sought professional help about the way(s) fraud has impacted your mental health?,204
+SUMMARY - (Sum: Well): To what extent do you think that the government is handling each of the following policy areas well or badly?,205
+SUMMARY - (Sum: Badly): To what extent do you think that the government is handling each of the following policy areas well or badly?,206
+The economy:  To what extent do you think that the government is handling each of the following policy areas well or badly?,207
+Inflation and the cost of living:  To what extent do you think that the government is handling each of the following policy areas well or badly?,208
+Immigration:  To what extent do you think that the government is handling each of the following policy areas well or badly?,209
+The NHS:  To what extent do you think that the government is handling each of the following policy areas well or badly?,210
+Housing:  To what extent do you think that the government is handling each of the following policy areas well or badly?,211
+Crime:  To what extent do you think that the government is handling each of the following policy areas well or badly?,212
+The environment and climate change:  To what extent do you think that the government is handling each of the following policy areas well or badly?,213
+Taxation:  To what extent do you think that the government is handling each of the following policy areas well or badly?,214
+Pensions:  To what extent do you think that the government is handling each of the following policy areas well or badly?,215
+Transport:  To what extent do you think that the government is handling each of the following policy areas well or badly?,216
+Education:  To what extent do you think that the government is handling each of the following policy areas well or badly?,217
+Britain's relationship with the EU:  To what extent do you think that the government is handling each of the following policy areas well or badly?,218
+Defence:  To what extent do you think that the government is handling each of the following policy areas well or badly?,219
+SUMMARY - (Conservative Party): Which of the following political parties do you think is best placed to manage each of the following issues?,220
+SUMMARY - (Labour Party): Which of the following political parties do you think is best placed to manage each of the following issues?,221
+The economy: Which of the following political parties do you think is best placed to manage each of the following issues?,222
+Inflation and the cost of living: Which of the following political parties do you think is best placed to manage each of the following issues?,223
+Immigration: Which of the following political parties do you think is best placed to manage each of the following issues?,224
+The NHS: Which of the following political parties do you think is best placed to manage each of the following issues?,225
+Housing: Which of the following political parties do you think is best placed to manage each of the following issues?,226
+Crime: Which of the following political parties do you think is best placed to manage each of the following issues?,227
+The environment and climate change: Which of the following political parties do you think is best placed to manage each of the following issues?,228
+Taxation: Which of the following political parties do you think is best placed to manage each of the following issues?,229
+Pensions: Which of the following political parties do you think is best placed to manage each of the following issues?,230
+Transport: Which of the following political parties do you think is best placed to manage each of the following issues?,231
+Education: Which of the following political parties do you think is best placed to manage each of the following issues?,232
+Britain's relationship with the EU: Which of the following political parties do you think is best placed to manage each of the following issues?,233
+Defence: Which of the following political parties do you think is best placed to manage each of the following issues?,234
+SUMMARY - (Sum: Well): To what extent would you say that each of the following pledges from the government in YYYY have gone well or badly?,235
+SUMMARY - (Sum: Badly): To what extent would you say that each of the following pledges from the government in YYYY have gone well or badly?,236
+Halve inflation: To what extent would you say that each of the following pledges from the government in YYYY have gone well or badly?,237
+Grow the economy: To what extent would you say that each of the following pledges from the government in YYYY have gone well or badly?,238
+Get debt falling: To what extent would you say that each of the following pledges from the government in YYYY have gone well or badly?,239
+Cut NHS waiting lists: To what extent would you say that each of the following pledges from the government in YYYY have gone well or badly?,240
+Stop the boats: To what extent would you say that each of the following pledges from the government in YYYY have gone well or badly?,241
+Halve inflation: Which of the following political parties do you think is best placed to manage each of the following issues?,242
+Grow the economy: Which of the following political parties do you think is best placed to manage each of the following issues?,243
+Get debt falling: Which of the following political parties do you think is best placed to manage each of the following issues?,244
+Cut NHS waiting lists: Which of the following political parties do you think is best placed to manage each of the following issues?,245
+Stop the boats: Which of the following political parties do you think is best placed to manage each of the following issues?,246
+"The government has agreed a deal whereby some people who have entered Britain and applied for asylum will be flown to Rwanda, in Africa, for their applications to be processed. If their application is successful, they would be given long-term accommodation in Rwanda. To what extent do you support or oppose this?",247
+Which of the following phrases do you think best describes the government's policy to deport asylum seekers who arrive in the UK by small boat across the Channel to the African country of Rwanda?,248
+"To what extent do you think the threat of deportation to Rwanda will reduce or increase the numbers of migrants seeking to cross the Channel in small boats, or will it make no difference?",249
+"To what extent would you say that you are sure, or unsure, whether flights to Rwanda to deport asylum seekers from the UK will take off?",250
+Which of the following statements is closest to your view?,251
+Which of the following is closest to your view?,252
+Which of the following statements best describes your view?,253
+"Thinking about society overall, which of the following statements best describes your view?",254
+"SUMMARY - (NET: Ever): When, if ever, have you experienced each of the following in public?",255
+"SUMMARY - (NET: In the last year / more than a year ago): When, if ever, have you experienced each of the following in public?",256
+"Being cat-called or wolf-whistled: When, if ever, have you experienced each of the following in public?",257
+"Being stared at: When, if ever, have you experienced each of the following in public?",258
+"Unwelcome touching, body rubbing or groping: When, if ever, have you experienced each of the following in public?",259
+"In-person indecent comments or jokes: When, if ever, have you experienced each of the following in public?",260
+"Unwelcome sexual advances or requests for sexual favours: When, if ever, have you experienced each of the following in public?",261
+"Being physically followed: When, if ever, have you experienced each of the following in public?",262
+"Indecent exposure: When, if ever, have you experienced each of the following in public?",263
+"Online indecent comments or jokes: When, if ever, have you experienced each of the following in public?",264
+"Sharing of suggestive or indecent content online or in-person: When, if ever, have you experienced each of the following in public?",265
+"Being forced into participating in sexual behaviour: When, if ever, have you experienced each of the following in public?",266
+"Had images taken and/or shared without your consent: When, if ever, have you experienced each of the following in public?",267
+"Other form of sexual harassment: When, if ever, have you experienced each of the following in public?",268
+"SUMMARY - (NET: Satisfied): Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",269
+"SUMMARY - (NET: Dissatisfied): Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",270
+"You said that you experienced Being cat-called or wolf-whistled in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",271
+"You said that you experienced Being stared at in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",272
+"You said that you experienced Unwelcome touching, body rubbing or groping in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",273
+"You said that you experienced In-person indecent comments or jokes in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",274
+"You said that you experienced Unwelcome sexual advances or requests for sexual favours in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",275
+"You said that you experienced Being physically followed in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",276
+"You said that you experienced Indecent exposure in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",277
+"You said that you experienced Online indecent comments or jokes in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",278
+"You said that you experienced Sharing of suggestive or indecent content online or in-person in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",279
+"You said that you experienced Being forced into participating in sexual behaviour in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",280
+"You said that you experienced Had images taken and/or shared without your consent in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",281
+"You said that you experienced Other form of sexual harassment in public. Did you ever report the incident(s) to the police, and if so, how satisfied were you with the outcome?",282
+"SUMMARY - (NET: Ever): To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",283
+"SUMMARY - (NET: In the last year / more than a year ago): To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",284
+"Being cat-called or wolf-whistled: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",285
+"Being stared at: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",286
+"Unwelcome touching, body rubbing or groping: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",287
+"In-person indecent comments or jokes: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",288
+"Unwelcome sexual advances or requests for sexual favours: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",289
+"Being physically followed: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",290
+"Indecent exposure: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",291
+"Online indecent comments or jokes: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",292
+"Sharing of suggestive or indecent content online or in-person: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",293
+"Being forced into participating in sexual behaviour: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",294
+"Had images taken and/or shared without your consent: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",295
+"Other form of sexual harassment: To the best of your knowledge, when, if ever, have any of your female friends or family experienced each of the following in their lives?",296
+To what extent do you have trust in the police's ability to keep women safe in public?,297
+"Which of the following experiences, if any, have happened to you at your current work place?",298
+"SUMMARY - (NET: Always/often): How often, if at all, do you do each of the following chores in your household?",299
+"SUMMARY - (NET: Rarely/never): How often, if at all, do you do each of the following chores in your household?",300
+"Prepare meals for yourself or others: How often, if at all, do you do each of the following chores in your household?",301
+"Clean areas of your home (e.g. sweeping, dusting, vacuuming etc.): How often, if at all, do you do each of the following chores in your household?",302
+"Do the laundry for yourself or others (e.g. wash, dry, iron clothes etc.): How often, if at all, do you do each of the following chores in your household?",303
+"Do the grocery shopping for yourself or others: How often, if at all, do you do each of the following chores in your household?",304
+"Perform home maintenance tasks (e.g. fixing items, gardening, painting etc.): How often, if at all, do you do each of the following chores in your household?",305
+"Manage household finances (e.g. pay bills, budgeting etc.): How often, if at all, do you do each of the following chores in your household?",306
+"Provide childcare for children (e.g. feeding, bathing, helping with homework, driving to activities etc.): How often, if at all, do you do each of the following chores in your household?",307
+"Provide care for elderly or disabled family members (e.g. helping with medications, personal care, doctors' appointments etc.): How often, if at all, do you do each of the following chores in your household?",308
+Which of the following best describes your view?,309
+"Have you experienced any content, comments, videos, or images online in the last 12 months that...",310
+"SUMMARY - (NET: Favourable): To what extent, if at all, do you have a favourable or unfavourable view of the following people?",311
+"SUMMARY - (NET: Unfavourable): To what extent, if at all, do you have a favourable or unfavourable view of the following people?",312
+"Andrew Tate: To what extent, if at all, do you have a favourable or unfavourable view of the following people?",313
+"Elon Musk: To what extent, if at all, do you have a favourable or unfavourable view of the following people?",314
+"Donald Trump: To what extent, if at all, do you have a favourable or unfavourable view of the following people?",315
+"Greta Thunberg: To what extent, if at all, do you have a favourable or unfavourable view of the following people?",316
+"Barack Obama: To what extent, if at all, do you have a favourable or unfavourable view of the following people?",317
+"Taylor Swift: To what extent, if at all, do you have a favourable or unfavourable view of the following people?",318
+SUMMARY - (Rank 1): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,319
+SUMMARY - (Rank 1-3): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,320
+SUMMARY - (Rank 1-5): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,321
+Gender recognition and the rights of transgender people: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,322
+The economy: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,323
+Inflation and the cost of living: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,324
+Immigration: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,325
+The NHS: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,326
+Housing: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,327
+Crime: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,328
+The environment and climate change: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,329
+Taxation: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,330
+Pensions: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,331
+Transport: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,332
+Education: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,333
+Britain's relationship with the EU: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,334
+The war in Ukraine: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,335
+Social care: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,336
+Poverty/inequality: Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,337
+What is your annual salary before tax and deductions?,338
+What is your current level of seniority at your workplace?,339
+Which of the following would best describe your political leaning?,340
+To what extent are you concerned or not concerned about affording your energy bills this winter?,341
+"SUMMARY - (Rank 1-3): Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",342
+"SUMMARY - (Rank 1-5): Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",343
+"Immigration allowing highly skilled people to fill jobs where there is a labour shortage: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",344
+"Immigration bringing in more people of working age who contribute to the UK in taxes: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",345
+"Immigration allowing people to fill low-paid jobs that British workers won't do: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",346
+"Immigration bringing in people with fresh ideas to star businesses and create jobs: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",347
+"Immigration bringing in foreign students to fund universities and make them more vibrant: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",348
+"Immigration enriching British culture and making it more diverse: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",349
+"Immigration allowing people to come to the UK to claim welfare for themselves and their family: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",350
+"Immigration increasing the pressure and demand on public services: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",351
+"Immigration increasing the pressure and demand for housing: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",352
+"Immigration damaging Britain's own culture and traditions: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",353
+"Immigration undercutting the wages of British workers: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",354
+"Immigration allowing those with extremist views into the UK: Thinking of the following possible impacts of immigration, please rank them in order of importance to you.",355
+SUMMARY - (Sum: More): To what extent would you allow more or less of each of the following types of immigration?,356
+SUMMARY - (Sum: Less): To what extent would you allow more or less of each of the following types of immigration?,357
+People escaping war or persecution in their own country: To what extent would you allow more or less of each of the following types of immigration?,358
+Wealthy individuals looking to invest in the UK: To what extent would you allow more or less of each of the following types of immigration?,359
+People looking to work in the health and social care sectors: To what extent would you allow more or less of each of the following types of immigration?,360
+People with family already in the UK: To what extent would you allow more or less of each of the following types of immigration?,361
+People paying to study in the UK: To what extent would you allow more or less of each of the following types of immigration?,362
+Highly educated people looking for high-paid jobs in the UK: To what extent would you allow more or less of each of the following types of immigration?,363
+People looking for low-paid work with lower levels of education: To what extent would you allow more or less of each of the following types of immigration?,364
+Summary - Has a problem with anti-Semitism : Which statement best describes your view about each of the following political parties?,365
+Conservative Party : Which statement best describes your view about each of the following political parties?,366
+Labour Party : Which statement best describes your view about each of the following political parties?,367
+Liberal Democrats : Which statement best describes your view about each of the following political parties?,368
+Green Party : Which statement best describes your view about each of the following political parties?,369
+Reform UK : Which statement best describes your view about each of the following political parties?,370
+Summary - Has a problem with Islamophobia : Which statement best describes your view about each of the following political parties?,371
+Summary - Has a problem with Transphobia : Which statement best describes your view about each of the following political parties?,372
+Conservative Party: Which statement best describes your view about each of the following political parties?,373
+Labour Party: Which statement best describes your view about each of the following political parties?,374
+Liberal Democrats: Which statement best describes your view about each of the following political parties?,375
+Green Party: Which statement best describes your view about each of the following political parties?,376
+Reform UK: Which statement best describes your view about each of the following political parties?,377
+Summary Net Good: To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,378
+Improving Labour's image : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,379
+Dealing with allegations of anti-Semitism in the party : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,380
+Making Labour electable : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,381
+Holding the government to account : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,382
+Presenting a clear vision of what Labour stands for : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,383
+Taking a lead during the coronavirus crisis : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,384
+Having a clear position on Brexit : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,385
+Presenting a credible economic alternative : To what extent would you say that Keir Starmer has done a good or bad job in each of the following areas since becoming Labour leader?,386
+"Summary Support : Assuming that the reasons for industrial action (going on strike), is related to disputes over pay and conditions (i.e. a workforce or union does not believe that the pay rise offered is satisfactory), to what extent would you support or oppose each of the following going on strike?",387
+"Summary Oppose : Assuming that the reasons for industrial action (going on strike), is related to disputes over pay and conditions (i.e. a workforce or union does not believe that the pay rise offered is satisfactory), to what extent would you support or oppose each of the following going on strike?",388
+"Nurses : Assuming that the reasons for industrial action (going on strike), is related to disputes over pay and conditions (i.e. a workforce or union does not believe that the pay rise offered is satisfactory), to what extent would you support or oppose each of the following going on strike?",389
+"Junior doctors : Assuming that the reasons for industrial action (going on strike), is related to disputes over pay and conditions (i.e. a workforce or union does not believe that the pay rise offered is satisfactory), to what extent would you support or oppose each of the following going on strike?",390
+"Senior doctors/Consultants : Assuming that the reasons for industrial action (going on strike), is related to disputes over pay and conditions (i.e. a workforce or union does not believe that the pay rise offered is satisfactory), to what extent would you support or oppose each of the following going on strike?",391
+"Ambulance drivers : Assuming that the reasons for industrial action (going on strike), is related to disputes over pay and conditions (i.e. a workforce or union does not believe that the pay rise offered is satisfactory), to what extent would you support or oppose each of the following going on strike?",392
+"NHS support staff (e.g. maintenance, catering) : Assuming that the reasons for industrial action (going on strike), is related to disputes over pay and conditions (i.e. a workforce or union does not believe that the pay rise offered is satisfactory), to what extent would you support or oppose each of the following going on strike?",393
+To what extent would you say you have been affected by junior doctors striking in the past year?,394
+Which of the following is most to blame for junior doctors taking industrial action (strikes)?,395
+Which of the following do you sympathise with most?,396
+Sum: Support : To what extent do you support or oppose each of the following policies?,397
+Sum: Oppose : To what extent do you support or oppose each of the following policies?,398
+Abolishing inheritance tax : To what extent do you support or oppose each of the following policies?,399
+Reinstating fracking (the process of extracting shale gas) : To what extent do you support or oppose each of the following policies?,400
+Removing the cap on banker's bonuses : To what extent do you support or oppose each of the following policies?,401
+Keeping the existing rate of corporation tax at 25% : To what extent do you support or oppose each of the following policies?,402
+"Abolishing the 45% top rate of income tax for people earning over £125,000 a year : To what extent do you support or oppose each of the following policies?",403
+Scrap 'green levies' from energy bills : To what extent do you support or oppose each of the following policies?,404
+Putting the independent Bank of England under governmental control : To what extent do you support or oppose each of the following policies?,405
+Financially deregulate the City of London : To what extent do you support or oppose each of the following policies?,406
+"Sum: Conservative : And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",407
+"Sum: Labour : And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",408
+"Abolishing inheritance tax: And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",409
+"Reinstating fracking (the process of extracting shale gas): And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",410
+"Removing the cap on banker's bonuses: And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",411
+"Keeping the existing rate of corporation tax at 25%: And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",412
+"Abolishing the 45% top rate of income tax for people earning over £125,000 a year: And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",413
+"Scrap 'green levies' from energy bills: And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",414
+"Putting the independent Bank of England under governmental control: And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",415
+"Financially deregulate the City of London: And thinking about the following policies, do they sound like more of a Conservative policy, or more of a Labour policy?",416
+"Compared to 2010, to what extent do you think Britain is in a better place now, a worse place now, or about the same?",417
+"Economy : To what extent would you say that each of the following is, or is not, a priority for the government at the moment?",418
+"Healthcare : To what extent would you say that each of the following is, or is not, a priority for the government at the moment?",419
+"Education : To what extent would you say that each of the following is, or is not, a priority for the government at the moment?",420
+"Immigration : To what extent would you say that each of the following is, or is not, a priority for the government at the moment?",421
+"Climate change : To what extent would you say that each of the following is, or is not, a priority for the government at the moment?",422
+"Thinking about the current government, to what extent would you say that they are more, or less corrupt than previous UK governments, or are they about the same?",423
+"How much, if any, do you currently think you have in savings? By 'savings', we mean the total approximate value of money held in cash savings and the total current value of any investments. We do not mean investments in items such as property, art, wine, jewellery, or collectibles.",424
+"How much, if at all, do you currently think you are in debt? By 'debt', we tend to include any of the following: consumer credit agreements, such as motor finance and personal loans; non‑regulated loans, i.e. deferred payment credit, as well as student loans and loans from friends or family; employer salary advance schemes; loans from unlicensed moneylenders or other informal lenders (i.e. illegal moneylenders).",425
+"The economy in general: To what extent do you expect each of the following to get better or worse in YYYY, or will it stay about the same?",426
+"Your personal financial situation: To what extent do you expect each of the following to get better or worse in YYYY, or will it stay about the same?",427
+"When it comes to your personal finances, to what extent would you describe yourself as a spender, or a saver?",428
+"To what extent would a reduction in interest rates make you better or worse off financially, or would it have no impact?",429
+"To what extent would a reduction in inflation make you better or worse off financially, or would it have no impact?",430
+To what extent do you think it is appropriate or inappropriate for informal WhatsApp messages from elected and unelected government officials are made public as part of the Covid inquiry?,431
+"NHS: Do you believe that each of the following should be ran by the public sector, or by the private sector?",432
+"Schools: Do you believe that each of the following should be ran by the public sector, or by the private sector?",433
+"Buses: Do you believe that each of the following should be ran by the public sector, or by the private sector?",434
+"Water: Do you believe that each of the following should be ran by the public sector, or by the private sector?",435
+"Railways: Do you believe that each of the following should be ran by the public sector, or by the private sector?",436
+"Energy: Do you believe that each of the following should be ran by the public sector, or by the private sector?",437
+"Postal service: Do you believe that each of the following should be ran by the public sector, or by the private sector?",438
+"Prisons: Do you believe that each of the following should be ran by the public sector, or by the private sector?",439
+"From what you've seen or heard, which of the following is closest to your view?",440
+When do you think the next UK General Election should be held?,441
+SUMMARY - (Top Rank): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,442
+Other (please specify): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,443
+The economy: To what extent do you think that the government is handling each of the following policy areas well or badly?,444
+Inflation and the cost of living: To what extent do you think that the government is handling each of the following policy areas well or badly?,445
+Immigration: To what extent do you think that the government is handling each of the following policy areas well or badly?,446
+The NHS: To what extent do you think that the government is handling each of the following policy areas well or badly?,447
+Housing: To what extent do you think that the government is handling each of the following policy areas well or badly?,448
+Crime: To what extent do you think that the government is handling each of the following policy areas well or badly?,449
+The environment and climate change: To what extent do you think that the government is handling each of the following policy areas well or badly?,450
+Taxation: To what extent do you think that the government is handling each of the following policy areas well or badly?,451
+Pensions: To what extent do you think that the government is handling each of the following policy areas well or badly?,452
+Transport: To what extent do you think that the government is handling each of the following policy areas well or badly?,453
+Education: To what extent do you think that the government is handling each of the following policy areas well or badly?,454
+Britain's relationship with the EU: To what extent do you think that the government is handling each of the following policy areas well or badly?,455
+SUMMARY - (Sum: Positive): To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,456
+SUMMARY - (Sum: Negative): To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,457
+Keir Starmer becoming UK Prime Minister after the next General Election: To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,458
+Rishi Sunak remaining UK Prime Minister after the next General Election: To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,459
+Donald Trump becoming US President after the next US Presidential Election: To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,460
+Joe Biden remaining US President after the next US Presidential Election: To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,461
+Nikki Haley becoming US President after the next US Presidential Election: To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,462
+Ron DeSantis becoming US President after the next US Presidential Election: To what extent do you think that each of the following outcomes in YYYY would be positive or negative?,463
+"Looking at each pair of statements, which do you think best describes the Conservative Party?",464
+"Looking at each pair of statements, which do you think best describes the Labour Party?",465
+"Looking at each pair of statements, which do you think best describes Rishi Sunak?",466
+"Looking at each pair of statements, which do you think best describes Keir Starmer?",467
+"Looking at each pair of statements, which do you think best describes Donald Trump?",468
+"Looking at each pair of statements, which do you think best describes Joe Biden?",469
+SUMMARY - (Sum: Support): To what extent do you support or oppose each of the following in your local area?,470
+SUMMARY - (Sum: Oppose): To what extent do you support or oppose each of the following in your local area?,471
+New housing developments: To what extent do you support or oppose each of the following in your local area?,472
+A new out-of-town shopping centre: To what extent do you support or oppose each of the following in your local area?,473
+Pedestrianisation of your local high street: To what extent do you support or oppose each of the following in your local area?,474
+The introduction of a localised low emissions zone: To what extent do you support or oppose each of the following in your local area?,475
+The building of wind turbines: To what extent do you support or oppose each of the following in your local area?,476
+A nuclear power station: To what extent do you support or oppose each of the following in your local area?,477
+"To what extent do you believe global climate change to be man-made, or a natural occurrence?",478
+To what extent do you believe climate change to be exaggerated or not?,479
+SUMMARY - (Rank 2): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,480
+SUMMARY - (Rank 3): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,481
+SUMMARY - (Rank 4): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,482
+SUMMARY - (Rank 5): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,483
+SUMMARY - (Rank 6): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,484
+SUMMARY - (Rank 7): Which of the following policy issues are most important to you when deciding how to vote at the next General Election?,485
+What would you prefer for the UK?,486
+"Prince Andrew, brother to King Charles, was this week named in US court documents relating to the deceased American pedophile and sex trafficker, Jeffery Epstein. In the documents, Andrew is again accused of having committed sexual assault against an underage girl in 2001 at a house in London, accusations that have been public since 2014. In 2021, the Metropolitan Police conducted a review of the evidence relating to the allegations against Prince Andrew but took no further action. Which of the following statements best describes your view?",487
+"Anti-social behaviour (ASB) is conduct that causes harassment, alarm or distress to a person. How often, if at all, are you experiencing or witnessing anti-social behaviour in your local area?",488
+You mentioned that you have experienced or witnessed anti-social behaviour in your local area. Has this behaviour ever made you feel any of the following?,489
+"To what extent, if at all, has anti-social behaviour in your local area had a negative impact on your mental health?",490
+"To what extent, if at all, are you confident in the ability of the police to tackle anti-social behaviour in your local area?",491
+Dominic Raab: To what extent do you feel favourably or unfavourably towards each of the following?,492
+How do you feel about the monarchy in the UK?,493
+Should the UK?,494
+Would you prefer for the UK?,495
+"Do you consider yourself to be a carer? A carer is anyone, including children and adults, who looks after a family member, partner or friend who needs help because of their illness, frailty, disability, a mental health problem or an addiction and cannot cope without their support. The care they give is unpaid.",496
+Which of the following best describes your current financial situation?,497
+Do you have any of the following private health or dental insurance plans?,498
+Does your workplace offer any of the following health-related workplace benefits?,499
+"In the last 12 months, have you paid for a private health or dental care service? This could include a consultation, a medical procedure, a test or scan, getting medication, or any other private service. Please only select yes if you have personally paid to use private health services, including paying for health insurance or if you have accessed private care through a workplace scheme. This does not include receiving care through a private provider that was paid for by the NHS, nor routine payments for using NHS services, such as prescription charges or NHS dentistry.",500
+You said that you used private health care in the last 12 months. Please indicate the reason / reasons why you paid for private health care.,501
+"You said that you paid for private health care in the last 12 months. Did you access this service in England, elsewhere in the UK, or in another country?",502
+"In the last 12 months, have you considered paying for private health care?",503
+Please indicate the reason / reasons why you have considered paying for private health care:,504
+You said that you used private dental care in the last 12 months. Please indicate the reasons why you paid for private dental care.,505
+"In the last 12 months, has a professional working for the NHS advised you to consider paying for a private health service? For example, this could have been to avoid a waitlist, because the service you need wasn't offered by the NHS, or because you might have been able to get more appropriate care through a private provider.",506
+"Summary Problem: To what extent would you say that homelessness is, or is not, a problem in each of the following areas?",507
+"Summary Not a problem: To what extent would you say that homelessness is, or is not, a problem in each of the following areas?",508
+"In your neighbourhood: To what extent would you say that homelessness is, or is not, a problem in each of the following areas?",509
+"In the UK's big cities: To what extent would you say that homelessness is, or is not, a problem in each of the following areas?",510
+"In the UK generally: To what extent would you say that homelessness is, or is not, a problem in each of the following areas?",511
+"Summary Good job: To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",512
+"Summary Bad job: To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",513
+"Having a visible presence in your area : To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",514
+"Acting as a deterrent for criminal activity : To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",515
+"Policing peaceful protests in the UK : To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",516
+"Policing major events i.e. football matches : To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",517
+"Investigating major crimes : To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",518
+"Investigating minor crimes : To what extent do you think that, generally, the police in the UK do a good or bad job at each of the following?",519
+Which of the following is closest to your view? 'The police in the UK...,520
+Summary Well: To what extent do you think that the police handle each of the following types protests / demonstrations well or badly?,521
+Summary Badly: To what extent do you think that the police handle each of the following types protests / demonstrations well or badly?,522
+Pro-Palestine protests : To what extent do you think that the police handle each of the following types protests / demonstrations well or badly?,523
+"Environmental protests e.g. Just Stop Oil, Extinction Rebellion : To what extent do you think that the police handle each of the following types protests / demonstrations well or badly?",524
+Black Lives Matter protests : To what extent do you think that the police handle each of the following types protests / demonstrations well or badly?,525
+Anti-lockdown protests : To what extent do you think that the police handle each of the following types protests / demonstrations well or badly?,526
+Anti-Brexit protests : To what extent do you think that the police handle each of the following types protests / demonstrations well or badly?,527
+"Which of the following, if any, best describes your sexuality?",528
+Is the gender you identify with the same as your sex registered at birth?,529
+"You said that you have at some stage experienced a form of sexual harassment in public. Did you ever report any incident(s) to the police, and if so how satisfied were you with the outcome?",530
+"Being cat-called or wolf-whistled: When, if ever, have you experienced each of the following in the workplace?",531
+"Being stared at: When, if ever, have you experienced each of the following in the workplace?",532
+"Unwelcome touching, body rubbing or groping: When, if ever, have you experienced each of the following in the workplace?",533
+"In-person indecent comments or jokes: When, if ever, have you experienced each of the following in the workplace?",534
+"Unwelcome sexual advances or requests for sexual favours: When, if ever, have you experienced each of the following in the workplace?",535
+"Being physically followed: When, if ever, have you experienced each of the following in the workplace?",536
+"Indecent exposure: When, if ever, have you experienced each of the following in the workplace?",537
+"Online indecent comments or jokes: When, if ever, have you experienced each of the following in the workplace?",538
+"Sharing of suggestive or indecent content online or in-person: When, if ever, have you experienced each of the following in the workplace?",539
+"Being forced into participating in sexual behaviour: When, if ever, have you experienced each of the following in the workplace?",540
+"Had images taken and/or shared without your consent: When, if ever, have you experienced each of the following in the workplace?",541
+"Other form of sexual harassment: When, if ever, have you experienced each of the following in the workplace?",542
+"You said that you have at some stage experienced a form of sexual harassment in the workplace. Did you ever report any incident(s) to HR, and if so how satisfied were you with the outcome?",543
+experience of harrassment net,544
+Which of the following safety measures have you ever taken to feel safer in public?,545
+"To the best of your knowledge, have any of your female friends or family taken the following safety measures to feel safer in public?",546
+Have you ever taken any of the following measures to make women feel safer in public?,547
+"Who, if anyone, do you believe needs to do more to better support women's safety in public?",548
+To what extent do you have trust in the Crown Prosecution Service's (CPS) ability to prosecute crimes against women?,549
+Pepper spray ('mace'): To what extent do you support or oppose making it legal for individuals to carry the following for self-defence purposes only?,550
+Taser: To what extent do you support or oppose making it legal for individuals to carry the following for self-defence purposes only?,551
+Collapsible baton: To what extent do you support or oppose making it legal for individuals to carry the following for self-defence purposes only?,552
+"At your workplace: In the following businesses in the UK, do men or women tend to be paid more for the same work/role?",553
+"In your sector/industry: In the following businesses in the UK, do men or women tend to be paid more for the same work/role?",554
+"In the public sector: In the following businesses in the UK, do men or women tend to be paid more for the same work/role?",555
+"In the private sector: In the following businesses in the UK, do men or women tend to be paid more for the same work/role?",556
+"In large businesses (250+ employees): In the following businesses in the UK, do men or women tend to be paid more for the same work/role?",557
+"In medium sized businesses (50-249 employees): In the following businesses in the UK, do men or women tend to be paid more for the same work/role?",558
+"In small businesses (0-49 employees): In the following businesses in the UK, do men or women tend to be paid more for the same work/role?",559
+"If there was a referendum now on whether the UK should or should not join the EU, how likely would you be to vote on a scale from 0 to 10, where 0 means you are certain NOT to vote and 10 means you are absolutely CERTAIN to vote?",560
+"If there was a referendum now on whether the UK should or should not join the EU tomorrow with the question, 'Should the United Kingdom become a member of the European Union or not become a member of the European Union?', how would you vote?",561
+"Table Summary - NET Improved: It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",562
+"Table Summary - NET Worsened: It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",563
+"Britain's interests generally : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",564
+"Your own personal finances : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",565
+"Your ability to work, travel and study : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",566
+"The UK's economy : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",567
+"The UK's global influence : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",568
+"The UK's ability to control its borders and immigration : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",569
+"The level of bureaucracy faced by UK businesses and citizens : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",570
+"Availability of goods and services to UK consumers : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",571
+"UK's relationships with its European neighbours : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",572
+"The unity of the UK : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",573
+"Britain overall : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Leave campaign was right or wrong in how it described Brexit's likely impact on each of the following?",574
+"On the economy : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Leave campaign was right or wrong in how it described Brexit's likely impact on each of the following?",575
+"On disruptions to everyday life : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Leave campaign was right or wrong in how it described Brexit's likely impact on each of the following?",576
+"On the UK's position in the world : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Leave campaign was right or wrong in how it described Brexit's likely impact on each of the following?",577
+"On the impact on Northern Ireland : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Leave campaign was right or wrong in how it described Brexit's likely impact on each of the following?",578
+"On the unity of the United Kingdom : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Leave campaign was right or wrong in how it described Brexit's likely impact on each of the following?",579
+"Britain overall : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Remain campaign was right or wrong in how it described Brexit's likely impact on each of the following?",580
+"On the economy : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Remain campaign was right or wrong in how it described Brexit's likely impact on each of the following?",581
+"On disruptions to everyday life : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Remain campaign was right or wrong in how it described Brexit's likely impact on each of the following?",582
+"On the UK's position in the world : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Remain campaign was right or wrong in how it described Brexit's likely impact on each of the following?",583
+"On the impact on Northern Ireland : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Remain campaign was right or wrong in how it described Brexit's likely impact on each of the following?",584
+"On the unity of the United Kingdom : During the referendum on the UK's EU membership, the Leave and Remain campaigns set out very different pictures of what Brexit would be like. Having seen the outcome of Brexit so far, do you believe the Remain campaign was right or wrong in how it described Brexit's likely impact on each of the following?",585
+"The Leave campaign : Do you think, on the whole, each of the following told the truth more, or lied more, during the referendum campaign on what Brexit would be like?",586
+"The Remain campaign : Do you think, on the whole, each of the following told the truth more, or lied more, during the referendum campaign on what Brexit would be like?",587
+"Boris Johnson : Do you think, on the whole, each of the following told the truth more, or lied more, during the referendum campaign on what Brexit would be like?",588
+"Nigel Farage : Do you think, on the whole, each of the following told the truth more, or lied more, during the referendum campaign on what Brexit would be like?",589
+"David Cameron : Do you think, on the whole, each of the following told the truth more, or lied more, during the referendum campaign on what Brexit would be like?",590
+"Based on what you know now, which of the following is closest to your view?",591
+"When do you think, if at all, there should next be a referendum on whether or not the UK should re-join or stay out of the European Union?",592
+"The UK and EU have been in talks for over a year to create a deal on the Northern Ireland Protocol, which aims to avoid a hard border between Northern Ireland and the Republic of Ireland, make sure of the integrity of the EU's single market for goods and facilitate unfettered access for NI goods to the British market. A deal is reportedly close to being reached. Which of the following is closer to your view?",593
+"There have been reports that there could be red and green lanes for products and goods that go between Northern Ireland and Great Britain, the other countries in the UK. Green lanes are 'express lanes', in which goods will go through fewer checks and less paperwork than those goods heading for the Republic of Ireland. To what extent do you support or oppose this proposal?",594
+Which of the following is closer to your view?,595
+"Under the protocol Northern Ireland will continue to follow some EU trade rules, which may mean the European Court of Justice (ECJ) will have the final say on single market issues. To what extent do you think it fair, or unfair, that Northern Ireland will have to follow EU trade rules whilst the rest of the UK can create their own trade rules?",596
+"Table Summary NET More : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",597
+"Table Summary NET Less : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",598
+"Liz Truss : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",599
+"Boris Johnson : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",600
+"Theresa May : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",601
+"David Cameron : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",602
+"Gordon Brown : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",603
+"Tony Blair : Thinking about each of the following former Prime Ministers, to what extent do you think that they should give their views on current affairs and UK politics more or less than they do at the moment?",604
+"Former Prime Ministers in general : Some former Prime Ministers remain as Members of Parliament (MPs) once they are no longer Prime Minister, but others resign their seat and stop being an MP. Do you think each of the following should remain as an MP, or stop being an MP?",605
+"Liz Truss : Some former Prime Ministers remain as Members of Parliament (MPs) once they are no longer Prime Minister, but others resign their seat and stop being an MP. Do you think each of the following should remain as an MP, or stop being an MP?",606
+"Boris Johnson : Some former Prime Ministers remain as Members of Parliament (MPs) once they are no longer Prime Minister, but others resign their seat and stop being an MP. Do you think each of the following should remain as an MP, or stop being an MP?",607
+"Theresa May : Some former Prime Ministers remain as Members of Parliament (MPs) once they are no longer Prime Minister, but others resign their seat and stop being an MP. Do you think each of the following should remain as an MP, or stop being an MP?",608
+To what extent do you think it likely or unlikely that Rishi Sunak will fire Dominic Raab if he is found to have bullied civil servants?,609
+"Tackling violence against women and girls : Do you think the government is doing enough, or is not doing enough, on each of the following issues?",610
+"Supporting Ukraine in the war against Russia : Do you think the government is doing enough, or is not doing enough, on each of the following issues?",611
+"Supporting Britons with the rising cost of living : Do you think the government is doing enough, or is not doing enough, on each of the following issues?",612
+"Stopping migrants crossing the Channel in small boats : Do you think the government is doing enough, or is not doing enough, on each of the following issues?",613
+"Working with the EU on the Northern Ireland protocol : Do you think the government is doing enough, or is not doing enough, on each of the following issues?",614
+To what extent do you support or oppose the UK government supplying fighter jets to Ukraine?,615
+"Table Summary NET Improved : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",616
+"Table Summary NET Worsened : It is now two years since the UK transitioned out of its membership of the European Union and struck a new trade deal with the EU. Over the course of the past two years, to what extent do you think that Brexit has improved or worsened each of the following?",617
+"It has been reported that subcontractors from energy firms have been forcing their way into homes to install pre-payment utility meters, which are typically more expensive, for those who are struggling to pay their energy bills. Some have called for the head of the energy regulator Ofgem, whose responsibility it is to protect consumers from poor practice in the energy sector, to “consider his position”, although the government itself have not called for such action. Which of the following is closest to your view?",618
+"If energy firms are found to have forced the installation of prepayment meters on customers, which of the following courses of action would you prefer to see?",619
+"Thinking about any sexual partners you have ever had, to what extent do you think that they fully understood what is meant by 'consent'? By sexual partners, please think about times you have engaged in any sexual activity, not just penetrative sex, with another person.",620
+"Looking back, to what extent would you say that your first partnered sexual experience was earlier or later than you wanted it to be, or was it about when you wanted it to be?",621
+You said that your first partnered sexual experience was later than you wanted it to be. To what extent would you say that the Covid-19 pandemic was the reason for that?,622
+"To what extent would you say that you do, or do not, feel judged, by your peers regarding your sexual activity at the moment?",623
+"To what extent would you say that you did, or did not, feel pressurised into your first experience of penetrative sex?",624
+Which of the following statements is closest to your experience?,625
+Which of the following statements is closer to your experience?,626
+"To what extent do you think you would, or would not, feel confident in knowing what resources or people you can approach if you experience sexual harassment or abuse online?",627
+"To what extent would you say that your university is doing too much, or too little, to tackle misogyny among its student population, or is it doing about enough?",628
+"To what extent would you say that your university community takes student's sexual wellbeing seriously, or not seriously enough?",629
+"To what extent would you say that you do, or do not, feel pressurised to limit the number of sexual partners you have over the course of your life?",630
+"To what extent would you say that you did/do, or did/do not, feel pressurised to maintain your 'virginity'?",631
+How often would you say that you feel in control of the sexual scenarios that you find yourself in?,632
+"To what extent would you say that you have, or have not, had issues with arousal during sexual scenarios (either you or your partners)?",633
+"To what extent do you think you are, or are not, confident in knowing what to do when having issues with arousal among you and your sexual partners?",634
+Which of the following is closest to your experience?,635
+To what extent would you say that you feel safe or unsafe when having sex?,636
+"Summary Table: To what extent would you, or would you not, feel confident doing each of the following?",637
+"Confident - Summary Table: To what extent would you, or would you not, feel confident doing each of the following?",638
+"Not Confident - Summary Table: To what extent would you, or would you not, feel confident doing each of the following?",639
+"Label the testes on a diagram of the male reproductive organ: To what extent would you, or would you not, feel confident doing each of the following?",640
+"Label the nubis on a diagram of the female reproductive organ: To what extent would you, or would you not, feel confident doing each of the following?",641
+"Label the clitoral glans on a diagram of the female reproductive organ: To what extent would you, or would you not, feel confident doing each of the following?",642
+region. What is their region at home or their parental home?,643
+group. What group is this students' university in?,644
+region. What region is this students' university?,645
+year. What is this students' current course year?,646
+"Do you have any of the following impairments or health conditions, expected to last 12 months or more?",647
+Repay £5 you've lent them: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,648
+Lend you £5 when you need it: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,649
+Look after your home while you are away: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,650
+Cook a good meal: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,651
+Buy a round for their friends at the pub: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,652
+Tip their server: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,653
+Give impartial advice: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,654
+Assemble flat-pack furniture: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,655
+Cut the food you are sharing equally in half: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,656
+Organise a fun night out: Please select whether you trust Liz Truss or Keir Starmer more to do each of the following actions.,657
+Healthcare: To what extent are you optimistic or pessimistic about the following issues in 2021?,658
+Your financial situation: To what extent are you optimistic or pessimistic about the following issues in 2021?,659
+Employment: To what extent are you optimistic or pessimistic about the following issues in 2021?,660
+The economy: To what extent are you optimistic or pessimistic about the following issues in 2021?,661
+Going on holiday abroad: To what extent are you optimistic or pessimistic about the following issues in 2021?,662
+Your local area: To what extent are you optimistic or pessimistic about the following issues in 2021?,663
+"Thinking about your current financial situation, which of the following best describes how you feel about the cost of living?",664
+"Summary Table: You said that you are worried about the cost of living. Is this, or is this not, having a negative effect on your mental and physical health?",665
+"Very/somewhat negative effect - Summary: You said that you are worried about the cost of living. Is this, or is this not, having a negative effect on your mental and physical health?",666
+"Not much/no negative effect - Summary: You said that you are worried about the cost of living. Is this, or is this not, having a negative effect on your mental and physical health?",667
+"Mental health: You said that you are worried about the cost of living. Is this, or is this not, having a negative effect on your mental and physical health?",668
+"Physical health: You said that you are worried about the cost of living. Is this, or is this not, having a negative effect on your mental and physical health?",669
+"You mentioned that being worried about the cost of living is having a negative effect on your mental health. Which of the following, if any, have you experienced as a result?",670
+"In the last six months, where has your household noticed the most significant increase in costs?",671
+"Summary Table: Compared to a typical week, have you done any of the following in the last week specifically to save money?",672
+"Yes - Summary: Compared to a typical week, have you done any of the following in the last week specifically to save money?",673
+"Shopped at a different place than usual: Compared to a typical week, have you done any of the following in the last week specifically to save money?",674
+"Reduced the amount of food you bought: Compared to a typical week, have you done any of the following in the last week specifically to save money?",675
+"Eaten out less than usual: Compared to a typical week, have you done any of the following in the last week specifically to save money?",676
+"Not got a takeaway: Compared to a typical week, have you done any of the following in the last week specifically to save money?",677
+"Used a household appliance less (eg a kettle): Compared to a typical week, have you done any of the following in the last week specifically to save money?",678
+"Turned lights off: Compared to a typical week, have you done any of the following in the last week specifically to save money?",679
+"Used transport (car or public transport) less: Compared to a typical week, have you done any of the following in the last week specifically to save money?",680
+"Used a foodbank: Compared to a typical week, have you done any of the following in the last week specifically to save money?",681
+"Summary Table: How often, if at all, would you say you've done the following specifically to save money in the last six months?",682
+"Often/sometimes - Summary: How often, if at all, would you say you've done the following specifically to save money in the last six months?",683
+"Rarely/never - Summary: How often, if at all, would you say you've done the following specifically to save money in the last six months?",684
+"Ever - Summary: How often, if at all, would you say you've done the following specifically to save money in the last six months?",685
+"Gone on fewer day trips/days out: How often, if at all, would you say you've done the following specifically to save money in the last six months?",686
+"Travelled less to meet up with family or friends: How often, if at all, would you say you've done the following specifically to save money in the last six months?",687
+"Cut back on paying for school trip: How often, if at all, would you say you've done the following specifically to save money in the last six months?",688
+"Spent less on children's activities/ after school club: How often, if at all, would you say you've done the following specifically to save money in the last six months?",689
+"Spent less on hair and beauty (eg not had a hair cut): How often, if at all, would you say you've done the following specifically to save money in the last six months?",690
+"Spent less on clothes for yourself: How often, if at all, would you say you've done the following specifically to save money in the last six months?",691
+"Spent less on clothes for your children: How often, if at all, would you say you've done the following specifically to save money in the last six months?",692
+"Cut back on a gym membership or classes: How often, if at all, would you say you've done the following specifically to save money in the last six months?",693
+"Cut back on TV subscriptions: How often, if at all, would you say you've done the following specifically to save money in the last six months?",694
+"Put off big purchases (e.g. buying a new car, sofa, TV, doing work on your house): How often, if at all, would you say you've done the following specifically to save money in the last six months?",695
+"Gone on fewer nights out: How often, if at all, would you say you've done the following specifically to save money in the last six months?",696
+"Cut back on smoking/vaping: How often, if at all, would you say you've done the following specifically to save money in the last six months?",697
+"Cut back on playing the lottery: How often, if at all, would you say you've done the following specifically to save money in the last six months?",698
+"Reduced the amount you've donated to charity (including food banks): How often, if at all, would you say you've done the following specifically to save money in the last six months?",699
+"Cut back on trips taken in the car: How often, if at all, would you say you've done the following specifically to save money in the last six months?",700
+"Charged appliances (e.g. phone, computer) at work instead of at home: How often, if at all, would you say you've done the following specifically to save money in the last six months?",701
+"In the last six months, how difficult or easy has it been for your household to pay essential household costs (e.g. utility bills, food, housing costs)?",702
+Which of the following best describes how your household pays for energy?,703
+"You mentioned that you pay for your energy using a pre-payment meter. In the last six months, have you ever run out of credit or self-disconnected?",704
+You mentioned that you pay for your energy using a pre-payment meter. Did you choose to be on a pre-payment meter or did your energy company do so?,705
+"In the last six months, have you ever fallen into arrears on your energy bills?",706
+You mentioned that you have fallen into arrears on your energy bills in the last six months. Have you agreed a payment plan with your supplier?,707
+"Which of the following measures, if any, have you taken to save on energy costs so far this winter?",708
+You mentioned that you have sought financial help with your energy bills this winter. Who have you sought help from?,709
+Summary Table: Which of the following best describes your interaction with the following support available to help with the cost of living?,710
+Yes - Summary: Which of the following best describes your interaction with the following support available to help with the cost of living?,711
+Grants to improve the energy efficiency of your home: Which of the following best describes your interaction with the following support available to help with the cost of living?,712
+Council tax rebates for properties in bands A to D: Which of the following best describes your interaction with the following support available to help with the cost of living?,713
+Help paying your water bill: Which of the following best describes your interaction with the following support available to help with the cost of living?,714
+Social broadband tariffs: Which of the following best describes your interaction with the following support available to help with the cost of living?,715
+Holiday food programme for children on free school meals: Which of the following best describes your interaction with the following support available to help with the cost of living?,716
+Energy Company Support Fund/Hardship Fund: Which of the following best describes your interaction with the following support available to help with the cost of living?,717
+Energy Company Priority Services Register: Which of the following best describes your interaction with the following support available to help with the cost of living?,718
+Warm Home Discount: Which of the following best describes your interaction with the following support available to help with the cost of living?,719
+Cold Weather Payments: Which of the following best describes your interaction with the following support available to help with the cost of living?,720
+Fuel voucher: Which of the following best describes your interaction with the following support available to help with the cost of living?,721
+Tax free childcare: Which of the following best describes your interaction with the following support available to help with the cost of living?,722
+In the next six months how difficult or easy do you expect it to be to pay your housing costs (i.e. your mortgage or rent)?,723
+Would you expect your personal financial situation to get better or worse in the next six months?,724
+Between November 2021 and November 2022 the price of goods and services rose by an average of 10.7%. Which of the following best describes your views?,725
+"Will you, or your union, ask for your wages to increase this year?",726
+To what extent are you worried or not worried about losing your job in the next six months?,727
+"Thinking about your spending for Christmas and the holiday season in 2022 (e.g. food, presents etc.), did you spend more or less than you had planned to?",728
+"How much of your spending for Christmas and the holiday season in 2022 (e.g. food, presents etc.) was paid for on credit?",729
+How confident are you in your ability to repay the credit on your spending for Christmas and the holiday season in 2022?,730
+STATUS. Which of the following best describes your current working status?,731
+How many adults aged 18+ live in your household?,732
+"Do you have any children aged 18 or under? If so, how old are they?",733
+"What is your annual household income, before tax and deductions?",734
+Which of the following best describes your current living situation in the UK?,735
+"In the last 12 months, have you tried getting a face-to-face NHS GP appointment in your local area?",736
+"Which of the following, if any, have you done as a result of not being able to get a face-to-face NHS GP appointment in your local area?",737
