@@ -1,1 +1,3 @@
 openai_key = "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"
+newscatcher_key = "gQoBlDt2vmo7Wth6QdbPxQNVdSIP4fQJ"
+anthropic_key = "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"

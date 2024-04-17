@@ -1,6 +1,8 @@
 # History files
 .Rhistory
 .Rapp.history
+#Profiles
+.Rprofile
 
 # Data files
 *data/
