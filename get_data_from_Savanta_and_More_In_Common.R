@@ -138,9 +138,25 @@ sav39 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/10/Omni_
 sav40 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/11/Omni_W183_PH_Private.xlsx",date="04-11-2023")
 sav41 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/09/Omni_W176_MPP_Post_tables_Private.xlsx",date="16-09-2023")
 sav42 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/09/Omni_W173_MPP_Post_Tables_20230830_Private.xlsx",date="26-08-2023")
+sav43 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/07/Omni_W168_MPP_Post_Tables_20230725_Private.xlsx",date="22-07-2023")
+sav44 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/06/P029020_JRF_Low_Income_HH_W4_All_WTD_Tables_20230522_Private.xlsx",date="11-05-2023")
+sav45 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/06/Omni_W162_MPP_Post_Private.xlsx",date="10-06-2023")
+sav46 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/05/Omni_W158_MPP_Post_Private.xlsx",date="13-05-2023")
+sav47 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/05/Omni_W154_MPP_Post_Private.xlsx",date="15-04-2023")
+sav48 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/03/Omni_W150_MPP_Post_Private.xlsx",date="11-03-2023")
+sav49 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/03/Omni_W148_IWD_Public_V3_Private.xlsx",date="25-02-2023")
+sav50 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/03/Omni_W148_Brexit_Private.xlsx",date="25-02-2023")
+sav51 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/03/Omni_W147_MPP_Post_Private.xlsx",date="18-02-2023")
+sav52 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/02/Omni_W146_IndyPR_V2_Private.xlsx",date="11-02-2023")
+sav53 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/02/38028217_SSG_Book_Students_Jan23_WTD_Tables_20230123_Private.xlsx",date="16-01-2023")
+sav54 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/02/Omni_W142_MPP_Post_Tables_20230117_Private.xlsx",date="14-01-2023")
+sav55 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/01/P027631_BBC_News_Cost_of_living_Jan23_WTD_Tables_20230109_Private.xlsx",date="05-01-2023")
+sav56 <- get_savanta_table("https://savanta.com/wp-content/uploads/2023/01/Omni_W139_LibDems_Private.xlsx",date="10-12-2022")
+
 
 sav <- bind_rows(sav1,sav2,sav3,sav4,sav5,sav6,sav7,sav8,sav9,sav10,sav11,sav12,sav13,sav14,sav15,sav16,sav17,sav18,sav19,sav20,sav21,sav22,
-                 sav23,sav24,sav25,sav26,sav27,sav28,sav29,sav30,sav31,sav32,sav33,sav34,sav35,sav36,sav37,sav38,sav39,sav40,sav41,sav42)
+                 sav23,sav24,sav25,sav26,sav27,sav28,sav29,sav30,sav31,sav32,sav33,sav34,sav35,sav36,sav37,sav38,sav39,sav40,sav41,sav42,
+                 sav43,sav45,sav46,sav47,sav48,sav49,sav50,sav51,sav52,sav53,sav54,sav55,sav56)
 
 # Some general changes. Make the question neutral on year, for instance
 sav %<>% mutate(question=str_replace_all(question,"2023","YYYY"))
@@ -159,33 +175,47 @@ sav %<>% mutate(category=str_replace_all(category," (a)",""),
                 category=str_replace_all(category," (k)",""),
                 category=str_replace_all(category," (l)",""))
 
-# Get rid of the Savanta ID
+# Get rid of the Savanta ID, which is the first word of each question.
 sav %<>% mutate(question=substr(question,str_locate(question," ")+1,100000))
 
-# Make IDs and a cut-down version of the question for the sake of finding
-sav %<>% mutate(question_short=question,
-                question_short=str_replace_all(question_short," and "," "),
-                question_short=str_replace_all(question_short," if "," "),
-                question_short=str_replace_all(question_short," it "," "),
-                question_short=str_replace_all(question_short," the "," "),
-                question_short=str_replace_all(question_short," were "," "),
-                question_short=str_replace_all(question_short," there "," "),
-                question_short=str_replace_all(question_short," a "," "),
-                question_short=str_replace_all(question_short," that "," "),
-                question_short=str_replace_all(question_short," do "," "),
-                question_short=str_replace_all(question_short," for "," "),
-                question_short=str_replace_all(question_short," you "," "),
-                question_short=str_replace_all(question_short," what "," "),
-                question_short=str_replace_all(question_short," has "," "),
-                question_short=substr(question_short,1,175))
+# fix yorkshire
+sav %<>% mutate(category=if_else(category%in%c("Yorkshire & Humberside","Yorkshire & The Humber","Yorkshirend the Humber"),"Yorkshire & Humberside",category))
+sav %<>% filter(!is.na(question))
+
+sav %<>% mutate(breakdown=case_when(breakdown=="Social grade"~"Socioeconomic",
+                                    breakdown=="Regions"~"Region",
+                                    T~breakdown))
+
+sav %<>% filter(!response%in%c("Error variance","Standard Deviation","Base for Stats"))
+
+# # Make IDs and a cut-down version of the question for the sake of finding
+# sav %<>% mutate(question_short=question,
+#                 question_short=str_replace_all(question_short," and "," "),
+#                 question_short=str_replace_all(question_short," if "," "),
+#                 question_short=str_replace_all(question_short," it "," "),
+#                 question_short=str_replace_all(question_short," the "," "),
+#                 question_short=str_replace_all(question_short," were "," "),
+#                 question_short=str_replace_all(question_short," there "," "),
+#                 question_short=str_replace_all(question_short," a "," "),
+#                 question_short=str_replace_all(question_short," that "," "),
+#                 question_short=str_replace_all(question_short," do "," "),
+#                 question_short=str_replace_all(question_short," for "," "),
+#                 question_short=str_replace_all(question_short," you "," "),
+#                 question_short=str_replace_all(question_short," what "," "),
+#                 question_short=str_replace_all(question_short," has "," "),
+#                 question_short=substr(question_short,1,175))
 
 # Attach a key to the questions:
-questions <- sav %>% select(question,question_short) %>% unique
+questions <- sav %>% select(starts_with("question")) %>% unique
 questions %<>% mutate(key=row_number())
 sav %<>% full_join(questions)
 
-write_csv(questions,"D:/Savanta questions.csv")
-write_csv(sav,"D:/Savanta questions and data.csv")
+write_csv(questions,"D:/Savanta questions v2.csv")
+write_csv(filter(select(sav,-starts_with("question")),date>ymd("2024-03-01")),"D:/Savanta questions and data 1 v2.csv")
+write_csv(filter(select(sav,-starts_with("question")),date<=ymd("2024-03-01"),date>ymd("2023-12-25")),"D:/Savanta questions and data 2 v2.csv")
+write_csv(filter(select(sav,-starts_with("question")),date<=ymd("2023-12-25")),"D:/Savanta questions and data 3 v2.csv")
+
+write_rds(sav,"D:/Savanta questions and data.Rds")
 
 # Check which questions have a time series:
 question_dates <- sav %>% select(question_short,date) %>% unique
@@ -193,12 +223,19 @@ question_dates %<>% group_by(question_short) %>% mutate(n=n()) %>% filter(n()>1)
 
 ###### DRAW TEST GRAPHS WITH SAVANTA DATA
 
+  # errata
+
 test_question <- "Healthcare: To what extent are you optimistic or pessimistic about the following issues in YYYY?"
 test_response <- "Sum: Optimistic"
 
+test_question <- c("Crime:  To what extent do you think that the government is handling each of the following policy areas well or badly?","Crime: To what extent do you think that the government is handling each of the following policy areas well or badly?")
+sav$response[sav$question%in%test_question] %>% unique
+test_response <- "Sum: Well"
+
+
 # OVERALL
   test_graph_data <- sav %>% filter(!response%in%c("Total","Unweighted Total","Unweighted row","Don't know")) %>%
-                             filter(question==test_question) %>%
+                             filter(question%in%test_question) %>%
                              filter(breakdown=="Total",response==test_response) 
   test_graph <- test_graph_data %>% 
                   ggplot(aes(x=date,y=percent)) + geom_line() + geom_point() + scale_y_continuous(labels = scales::percent) + 
@@ -206,21 +243,21 @@ test_response <- "Sum: Optimistic"
 
 # BY AGE
   test_graph_data <- sav %>% filter(!response%in%c("Total","Unweighted Total","Unweighted row","Don't know")) %>%
-                              filter(question==test_question,response==test_response) %>%
+                              filter(question%in%test_question,response==test_response) %>%
                               filter(breakdown%in%c("Age","Total"),response==test_response,!substr(category,1,3)%in%c("Net","NET"))
   test_graph_data_cols <- c("#000000",brewer.pal(9,"Set1")[c(1:5,7:7)])
   names(test_graph_data_cols) <- unique(c("Total",unique(test_graph_data$category)))  # manipulate to that "Total appears first in the vector
   
   test_graph <- test_graph_data %>% 
                 ggplot(aes(x=date,y=percent,col=category)) + geom_line() + geom_point() + scale_y_continuous(labels = scales::percent) + geom_dl(aes(label=category),method="last.bumpup") +
-                theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y") + 
-                scale_colour_manual(values = test_graph_data_cols,guide="none") + coord_cartesian(xlim=c(dmy("15-08-2023"),dmy("01-04-2024"))) 
+                theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y",limits=c(min(test_graph_data$date),max(test_graph_data$date)+5)) + 
+                scale_colour_manual(values = test_graph_data_cols,guide="none") 
   test_graph2 <- test_graph + facet_grid(category~.,)
 
   
 # BY SEX
   test_graph_data <- sav %>% filter(!response%in%c("Total","Unweighted Total","Unweighted row","Don't know")) %>%
-    filter(question==test_question,response==test_response) %>%
+    filter(question%in%test_question,response==test_response) %>%
     filter(breakdown%in%c("Gender","Total"),response==test_response,!substr(category,1,3)%in%c("Net","NET"))
   
   test_graph_data_cols <- c("#000000",brewer.pal(9,"Set1")[c(1:5,7:7)])
@@ -228,15 +265,15 @@ test_response <- "Sum: Optimistic"
   
   test_graph <- test_graph_data %>% 
     ggplot(aes(x=date,y=percent,col=category)) + geom_line() + geom_point() + scale_y_continuous(labels = scales::percent) + geom_dl(aes(label=category),method="last.bumpup") +
-    theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y") + 
-    scale_colour_manual(values = test_graph_data_cols,guide="none") + coord_cartesian(xlim=c(dmy("15-08-2023"),dmy("01-04-2024")))
+    theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y",limits=c(min(test_graph_data$date),max(test_graph_data$date)+10)) + 
+    scale_colour_manual(values = test_graph_data_cols,guide="none") 
   test_graph2 <- test_graph + facet_grid(category~.,)
   
 # BY REGION
   
   test_graph_data <- sav %>% filter(!response%in%c("Total","Unweighted Total","Unweighted row","Don't know")) %>%
-    filter(question==test_question,response==test_response) %>%
-    filter(breakdown%in%c("Region","Total"),response==test_response,!substr(category,1,3)%in%c("Net","NET"))
+    filter(question%in%test_question,response==test_response) %>%
+    filter(breakdown%in%c("Region","Regions","Total"),response==test_response,!substr(category,1,3)%in%c("Net","NET"))
   
   test_graph_data %<>% mutate(category=factor(category,levels=c("North-East","North-West","Yorkshire & Humberside","East Midlands","West Midlands","Eastern","London","South-East","South-West","Wales","Scotland","Northern Ireland","Total")))
   
@@ -245,14 +282,14 @@ test_response <- "Sum: Optimistic"
   
   test_graph <- test_graph_data %>% 
     ggplot(aes(x=date,y=percent,col=category)) + geom_line() + geom_point() + scale_y_continuous(labels = scales::percent) + geom_dl(aes(label=category),method="last.bumpup") +
-    theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y") + 
-    scale_colour_manual(values = test_graph_data_cols,guide="none") + coord_cartesian(xlim=c(dmy("30-08-2023"),dmy("30-04-2024")))
+    theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y",limits=c(min(test_graph_data$date),max(test_graph_data$date)+20)) + 
+    scale_colour_manual(values = test_graph_data_cols,guide="none")
   test_graph2 <- test_graph + facet_grid(category~.,)
   
 # BY SOCIOECONOMIC
   
   test_graph_data <- sav %>% filter(!response%in%c("Total","Unweighted Total","Unweighted row","Don't know")) %>%
-    filter(question==test_question,response==test_response) %>%
+    filter(question%in%test_question,response==test_response) %>%
     filter(breakdown%in%c("Social grade","Total"),response==test_response,!substr(category,1,3)%in%c("Net","NET"))
   
   test_graph_data_cols <- c("#000000",brewer.pal(9,"Set1")[c(1:5,7:7)],brewer.pal(8,"Set2"))
@@ -260,8 +297,8 @@ test_response <- "Sum: Optimistic"
   
   test_graph <- test_graph_data %>% 
     ggplot(aes(x=date,y=percent,col=category)) + geom_line() + geom_point() + scale_y_continuous(labels = scales::percent) + geom_dl(aes(label=category),method="last.bumpup") +
-    theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y") + 
-    scale_colour_manual(values = test_graph_data_cols,guide="none") + coord_cartesian(xlim=c(dmy("30-08-2023"),dmy("01-04-2024")))
+    theme_minimal() + labs(title=paste0("Savanta","\n",test_question,"\n",test_response),y="",x="") + scale_x_date(date_labels="%b %Y",limits=c(min(test_graph_data$date),max(test_graph_data$date)+5)) + 
+    scale_colour_manual(values = test_graph_data_cols,guide="none") 
   test_graph2 <- test_graph + facet_grid(category~.,)
   
 ####### More In Common
