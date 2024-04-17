@@ -1,0 +1,51 @@
+
+# Setup -------------------------------------------------------------------
+
+library(shiny)
+library(tidyverse)
+
+# Data loading ------------------------------------------------------------
+
+
+# Load the polling data
+data <- read.csv("data/first_questions.csv")
+
+
+
+# UI ----------------------------------------------------------------------
+
+
+# Create a Shiny app
+ui <- fluidPage(
+  titlePanel("Search Topic"),
+  sidebarLayout(
+    sidebarPanel(
+      textInput("search_term", "Search Term")
+    ),
+    mainPanel(
+      tableOutput("results")
+    )
+  )
+)
+
+server <- function(input, output) {
+  # Observe the search term input
+  observeEvent(input$search_term, {
+    # Get the search term
+    search_term <- input$search_term
+    
+    # Preprocess the search term
+    # Insert sentiment filtering process here
+    
+    # Filter the questions based on the similarity scores
+    results <- data %>% 
+      filter(grepl(search_term, question)) %>% 
+      slice_max(question, n = 5)
+    
+    # Output the results
+    output$results <- renderTable(results)
+  })
+}
+
+# Run the Shiny app
+shinyApp(ui, server)

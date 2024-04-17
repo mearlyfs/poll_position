@@ -1,0 +1,40 @@
+
+
+# Setup -------------------------------------------------------------------
+
+packages_install <- c("openxlsx", "shinydashboard", "shiny", "shinyjs", "shinycssloaders", "DT", "hablar")
+
+# Excel files
+install.packages(setdiff(packages_install, rownames(installed.packages())))
+library(openxlsx)
+
+# SQL database 
+library(DBI)
+library(dbplyr)
+
+# Data manipulation
+library(purrr)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(hablar)
+
+# Shiny libraries
+library(shiny)
+library(shinydashboard)
+library(shinyjs)
+library(shinycssloaders)
+library(DT)
+
+
+# Misc
+`%notin%` = Negate(`%in%`)
+options(scipen = 999)
+
+# Source functions
+source("functions/get_comtrade_data.R")
+source("functions/concord_HS_data.R")
+source("functions/concord_ISIC_data.R")
+source("functions/tidy_comtrade_data.R")
+
+

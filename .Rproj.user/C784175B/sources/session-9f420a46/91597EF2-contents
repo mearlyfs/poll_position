@@ -1,0 +1,65 @@
+
+
+# Setup -------------------------------------------------------------------
+
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+source("functions/setup.R")
+
+
+# Specify parameters ------------------------------------------------------
+
+# Leave parameters as NULL if you do not want any specific filter for them
+
+# Reporter name or reporter iso
+reporter <- c("United Kingdom")
+reporter_iso <- NULL
+
+# Partner name
+partner <- c("World")
+partner_iso <- NULL
+
+# Year
+year <- 2017:2019
+
+# Trade flow
+trade_flow <- c("Import")
+
+# Classification (choose from certain HS nomenclature e.g. H5 is equivalent HS2017)
+# Note that if this is left as NULL, then the method will only use data for a given countries most recent HS nomenclature
+classification <- NULL
+
+# HS Aggregate level (choose from 2,4 or 6)
+aggregate_level <- 6
+
+# Commodity code(s) - leave as NULL if you require any concordance 
+commodity_code <- NULL
+
+# Choose year to concord to (e.g. "HS2017" - leave as NULL if no concordance wanted)
+# Note that concordance is only applied to 6-digit aggregation level data
+# Concordance should only be applied to a full set of commodity codes 
+concord_year <- "HS2017"
+
+# Choose whether an average should be calculated across all years (TRUE or FALSE)
+calculate_average <- FALSE
+
+# Provide value to convert from USD to GBP - leave as 1 if no conversion needed
+# Can add another conversion factor here e.g. 1/1000000 to get data in millions
+exchange_rate <- 1
+
+# Provide an export path if you want the data output to an excel file - leave as NULL if no output wanted
+export_path <- NULL
+
+
+# Get comtrade data ------------------------------------------------------------
+
+# Run function with specified parameters
+output <- get_tidy_comtrade_data(.reporter = reporter, .reporter_iso = reporter_iso,
+                                 .partner = partner, .partner_iso = partner_iso,
+                                 .year = year, .trade_flow = trade_flow,
+                                 .classification = classification, .aggregate_level = aggregate_level,
+                                 .commodity_code = commodity_code,
+                                 .concord_year = concord_year,
+                                 .calculate_average = calculate_average,
+                                 .exchange_rate = exchange_rate,
+                                 .export_path = export_path)
+

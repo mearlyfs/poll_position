@@ -1,0 +1,308 @@
+## Load Libraries -----------------------------------------------------------------------------------
+
+
+## Source scripts ------------------------------------------------------------------------------------
+
+source("functions/setup.R")
+
+# Setup various inputs ----------------------------------------------------
+
+
+countries <- read.xlsx("inputs/world_countries.xlsx") %>% 
+  pull(Country)
+
+
+# Define UI ---------------------------------------------------------------
+
+addResourcePath(prefix = "images", directoryPath = "images") # to ensure that the images work
+
+# Define UI 
+ui <- dashboardPage(
+  dashboardHeader(
+    title = "Comtrade Scraper",
+    
+    tags$li(actionButton('dashboardGuidance', 'Dashboard Guidance'),
+            class= 'dropdown',
+            style = "
+                            padding-right:2px;
+                            padding-top:15px; 
+                            padding-bottom:15px;
+                            overflow: hidden;
+                            ",
+            title = "Click here to read guidance on this dashboard"), #for accessiblity
+    
+    tags$li(a(
+      href = "",
+      img(src = "images/dit_logo.png",
+          title = "Department for International Trade Logo",
+          height = "60px"
+      ),
+      style = "padding-top:5px; padding-bottom:5px;"
+    ),
+    class = "dropdown"
+    )
+  ) , # should match dashboard header
+  
+  dashboardSidebar(
+    useShinyjs(),
+    sidebarMenu(
+      menuItem("Overview", tabName = "overview", icon = icon("dashboard"))
+    )
+  ),# should match dashboardSidebar
+  
+  dashboardBody(
+    tags$html(lang = "en"), # set language to English (accessibility)
+    useShinyjs(),
+    # Page 1 - Overview -------------------------------------------------------------------------------------------------
+    tabItems( 
+      tabItem(tabName = "overview",
+              fluidRow(
+                column(
+                  width = 12,
+                  box(title = "Choose inputs",
+                      width = NULL,
+                      solidHeader = TRUE,
+                      collapsible = TRUE,
+                      status = "danger",
+                      style = "overflow-x: scroll;",
+                      selectInput(inputId = "choiceReporter",
+                                  label = "Choose from list of reporter countries",
+                                  choices = c("All", "World", "EU27", countries),
+                                  multiple = TRUE,
+                                  selectize = TRUE,
+                                  selected = "United Kingdom"),
+                      selectInput(inputId = "choicePartner",
+                                  label = "Choose from list of partner countries",
+                                  choices = c("All","World", countries),
+                                  multiple = TRUE,
+                                  selectize = TRUE),
+                      sliderInput(inputId = "choiceYear",
+                                  label = "Choose from range of years",
+                                  min = 1962, 
+                                  max = 2019,
+                                  value = c(2017, 2019),
+                                  sep = ""),
+                      selectInput(inputId = "choiceFlow",
+                                  label = "Choose from trade flows",
+                                  choices = c("Import", "Export", "Re-Import", "Re-Export"),
+                                  multiple = TRUE,
+                                  selectize = TRUE),
+                      selectInput(inputId = "choiceAggregate",
+                                  label = "Choose HS level aggregate",
+                                  choices = c("2", "4", "6"),
+                                  multiple = FALSE,
+                                  selectize = FALSE,
+                                  selected = "6"),
+                      selectInput(inputId = "choiceClassification",
+                                  label = "Choose nomenclature of data to download",
+                                  choices = c("Latest Available for Each Country", "HS2017", "HS2012", "HS2007",
+                                              "HS2002", "HS1997", "HS1992"),
+                                  multiple = FALSE,
+                                  selectize = FALSE,
+                                  selected = "Latest Available for Each Country"),
+                      selectInput(inputId = "choiceConcord",
+                                  label = "Choose nomenclature of data to concord to",
+                                  choices = c("No Concordance",
+                                              "HS2017", "HS2012", "HS2007",
+                                              "HS2002", "HS1997", "HS1992",  "ISIC4"),
+                                  multiple = FALSE,
+                                  selectize = FALSE,
+                                  selected = "HS2017"),
+                      numericInput(inputId = "choiceExchange",
+                                   label = "Choose an exchange rate to convert from USD to",
+                                   value = 1,
+                                   min = 0,
+                                   step = 0.1),
+                      checkboxInput(inputId = "choiceAverage",
+                                    label = "Calculate Averages"),
+                      checkboxInput(inputId = "choiceOptions",
+                                    label = "Calculate Additional Metrics (RCA, Market Share etc.)"),
+                      actionButton("submit", "Submit", icon("Submit"), width = NULL, style="color: #fff; background-color: #337ab7; border-color: #2e6da4"),
+                  )
+                )
+              ),
+              fluidRow(
+                column(width = 12, 
+                       box(title = "Download Progress",
+                           width = NULL,
+                           solidHeader = TRUE,
+                           collapsible = TRUE,
+                           status = "danger",
+                           style = "overflow-x: scroll;",
+                           textOutput("progress")))),
+              fluidRow(
+                column(width = 12, 
+                       box(title = "Comtrade Data Table",
+                           DT::dataTableOutput("dataTable") %>%
+                             withSpinner(color="#a7031c"),
+                           downloadButton("downloadCSV","Download .csv"),
+                           downloadButton("downloadExcel","Download .xlsx"),
+                           width = NULL,
+                           solidHeader = TRUE,
+                           collapsible = TRUE,
+                           status = "danger"
+                       )
+                    )
+                )
+      ))
+  ),# should match dashboard body
+  
+  # skin = "red",
+  tags$head(tags$style(HTML("
+        /* logo */
+        .skin-blue .main-header .logo {
+                              height: 70px;
+                              background-color: #a7031c;
+                              line-height: 70px;
+        }
+        
+        /* navbar (rest of the header) */
+        .skin-blue .main-header .navbar {
+                              background-color: #cf102d;
+        }
+                              
+                              /* logo when hovered */
+        .skin-blue .main-header .logo:hover {
+                              background-color: #650110;
+        }
+                              
+                            /* colour of danger boxes */
+        .skin-blue .content-wrapper .box.box-solid.box-danger>.box-header {
+                              background-color: #cf102d;
+        }
+        
+        /* move sidebar lower */
+        .skin-blue .main-sidebar {
+                              padding-top: 70px;
+        }
+                            "))))
+
+
+
+
+# Define server ---------------------------------------------------------------------------
+
+server <- function(input, output, session) {
+  
+  # Disable nomenclature/concordance options if using lower aggregation than HS6
+  observeEvent(input$choiceAggregate, {
+    if (input$choiceAggregate == "6"){
+      shinyjs::enable("choiceClassification")
+      shinyjs::enable("choiceConcord")
+    } else {
+      shinyjs::disable("choiceClassification")
+      shinyjs::disable("choiceConcord")
+    }
+  })
+  
+  # Disable submit button if options are not filled in 
+  observeEvent(c(input$choiceReporter, input$choicePartner, input$choiceFlow), {
+    if (!is.null(input$choiceReporter) && !is.null(input$choicePartner) &&
+        !is.null(input$choiceFlow) && !is.null(input$choiceExchange)){
+      shinyjs::enable("submit")
+    } else {
+      shinyjs::disable("submit")
+    }
+  })
+  
+  # Get data for table
+  table_data <- eventReactive(input$submit, {
+    
+    # Disable submit button during processing
+    shinyjs::disable("submit")
+    
+    withCallingHandlers({
+      shinyjs::html("progress", "")
+      
+      year_range <- c(input$choiceYear[1]:input$choiceYear[2])
+      
+      table_data <- get_tidy_comtrade_data(.reporter = input$choiceReporter,
+                                           .partner = input$choicePartner,
+                                           .year = year_range, .trade_flow = input$choiceFlow,
+                                           .classification = input$choiceClassification,
+                                           .aggregate_level = input$choiceAggregate,
+                                           .commodity_code = NULL,
+                                           .concord_year = input$choiceConcord,
+                                           .calculate_average = input$choiceAverage,
+                                           .exchange_rate = input$choiceExchange,
+                                           .export_path = NULL)
+    }, 
+    
+    # Print progress messages during data extraction
+    message = function(m) {
+      shinyjs::html(id = "progress", html = paste0(m$message, '<br>'), add = TRUE)
+    })
+    
+  })
+  
+  # Render table
+  output$dataTable <- DT::renderDataTable(
+    DT::datatable(table_data(),
+                  rownames = FALSE,
+                  filter = "top",
+                  extensions = 'KeyTable',
+                  options = list(dom = 'lfrtip',
+                                 pageLength = 10,
+                                 keys = TRUE,
+                                 responsive = TRUE,
+                                 autoWidth = FALSE,
+                                 scrollY = TRUE,
+                                 scrollX = TRUE,
+                                 fixedHeader = TRUE,
+                                 searching = TRUE)
+                  ))
+  
+  # Download csv
+  output$downloadCSV <- downloadHandler(
+    filename = "comtrade_data.csv",
+    content = function(file) {
+      write.csv(table_data(), file, row.names = FALSE)
+    }
+  )
+  
+  # Download Excel
+  output$downloadExcel <- downloadHandler(
+    filename = "comtrade_data.xlsx",
+    content = function(file) {
+      write.xlsx(table_data(), file)
+    }
+  )
+  
+  # Re-enable submit button once table data is created
+  observeEvent(table_data(),{
+    shinyjs::enable("submit")
+    })
+
+    
+  # Dashboard guidance pop up ------------------------
+  # use a html text converter online to format the text you want.
+  observeEvent(input$dashboardGuidance, {
+    showModal(modalDialog(
+      title = "How to use this dashboard",
+      HTML(' <p>This&nbsp;dashboard has been developed by the Goods Analysis team&nbsp;in the&nbsp;Analysis Group to provide an enhanced data source of Comtrade trade data. Please note that this tool is under active development&nbsp;and&nbsp;we are&nbsp;working to deliver bug fixes and general improvements. It is&nbsp;for&nbsp;<strong>internal use only.</strong></p>
+<p>Information on data sources can be found at the &ldquo;Sources Guidance&rdquo;&nbsp;button.&nbsp;</p>
+<p><strong>How to use this dashboard</strong>&nbsp;</p>
+<p>For further information, comments or suggestions, please contact the team at matthew.early@trade.gov.uk.&nbsp;</p>
+               '),
+      easyClose = TRUE,
+      size = "l"
+    )
+    )
+  })
+  
+  
+  
+  # Attempt to stave off disconnection by pinging the browser every 10 seconds
+  autoInvalidate <- reactiveTimer(10000)
+  observe({
+    autoInvalidate()
+  })
+  
+  # If the browser is disconnected, attempt to reconnect automatically
+  session$allowReconnect('force')
+  
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+

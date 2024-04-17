@@ -1,0 +1,59 @@
+
+
+# Setup -------------------------------------------------------------------
+
+# Load the newscatcheR package
+library(newscatcheR)
+library(httr)
+library(jsonlite)
+library(tidyverse)
+library(request)
+library(tidytext)
+library(tm)
+library(topicmodels)
+
+# Set your API key
+api_key <- "gQoBlDt2vmo7Wth6QdbPxQNVdSIP4fQJ"
+
+api('https://v3-api.newscatcherapi.com/')
+
+# Extract Sites of interest -------------------------------------------------------
+
+news_sites <- c("bbc.co.uk", "dailymail.co.uk",
+                "express.co.uk", "mirror.co.uk")
+
+top_sites <- filter_urls(language = "en") %>%
+  filter(clean_country == "GB" | clean_country == "None") %>%
+  filter(clean_url %in% news_sites) %>% 
+  filter(topic_unified != "entertainment")
+
+
+
+# Extract all headlines today ---------------------------------------------
+
+all_headlines <- news_sites %>% 
+  map(~ get_headlines(.)) %>%
+  bind_rows() %>% 
+  rename(headline = 1)
+
+
+# Topics ------------------------------------------------------------------
+
+# Create a Corpus from the headlines
+corpus <- Corpus(VectorSource(all_headlines$headline))
+
+# Convert the corpus to a DocumentTermMatrix
+dtm <- DocumentTermMatrix(corpus)
+
+# Create a LDA model
+lda <- LDA(dtm, k = 3)
+
+# Print the topics
+print(lda$terms)
+
+
+# API ---------------------------------------------------------------------
+
+
+r <- GET("https://v3-api.newscatcherapi.com/api/search?q=Apple&countries=CA&page_size=1",
+         add_headers("x-api-token" = "gQoBlDt2vmo7Wth6QdbPxQNVdSIP4fQJ"))
